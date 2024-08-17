@@ -20,7 +20,7 @@ const App = () => {
   }, []);
   // const redditData = data;
   return (
-    <div>
+    <div className='mainHolder'>
       <Navbar />
       <div className="allCards">
 

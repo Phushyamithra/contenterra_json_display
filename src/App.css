@@ -1,14 +1,28 @@
+.mainHolder {
+  width: 1280px;
+}
+
 .allCards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
-  justify-items: center;
-  max-width: 1280px;
+  margin: 0 auto;
 }
 
+/* Adjust for mobile screens */
 @media (max-width: 768px) {
   .allCards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 card per row on smaller screens */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainHolder {
+    max-width: 430px;
+  }
+  .allCards {
+    padding: 5px; /* Reduce padding on very small screens */
   }
 }
